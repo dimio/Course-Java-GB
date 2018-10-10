@@ -1,9 +1,9 @@
 package Theme03;
 
 /**
- * @description Make, update and print a game map
- * @version 0.0.2
- * @author Dmitry
+ * @description Make, update and print a game field
+ * @version 0.0.3
+ * @author Dmitry (dimio-blog@gmail.com)
  */
 
 public class Map {
@@ -74,17 +74,4 @@ public class Map {
 
         return newMap;
     }
-
-    /*public static boolean isFull(char[][] map, char emptyCell){
-        boolean result = true;
-
-        for(int i = 0; i < map.length; i++){
-            for(int j = 0; j < map.length; j++){
-                if(map[i][j] == emptyCell)
-                    result = false;
-            }
-        }
-
-        return result;
-    }*/
 }

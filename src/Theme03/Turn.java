@@ -2,8 +2,8 @@ package Theme03;
 
 /**
  * @description Get turns coord for human and computer
- * @version 0.0.2
- * @author Dmitry
+ * @version 0.0.3
+ * @author Dmitry (dimio-blog@gmail.com)
  */
 
 import java.util.Scanner;
@@ -16,18 +16,19 @@ public class Turn {
         turnXY[1] = sc.nextInt() - 1; // Считывание номера столбца - Y
     }
 
-    public static void getComputerTurn(int[] turnXY, int[] hTurnXY, int field_size, int mode, int cnt){
+    public static void getComputerTurn(int[] turnXY, int[] hTurnXY, int winingStreakSize, int mode, int cnt, char[] CELLS, char[][] map){
         switch (mode) {
             case 1:
-                Engine.makeSillyTurn(turnXY, field_size);
+                Engine.makeSillyTurn(turnXY, map.length);
                 break;
             case 2:
-                Engine.makeDummyTurn(turnXY, hTurnXY, field_size, cnt);
+                Engine.makeDummyTurn(turnXY, hTurnXY, map.length, cnt);
                 break;
             case 3:
+                Engine.makeStupidTurn(turnXY, winingStreakSize, CELLS, map);
                 break;
             default:
-                Engine.makeSillyTurn(turnXY, field_size);
+                Engine.makeSillyTurn(turnXY, map.length);
                 break;
         }
     }
