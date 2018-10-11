@@ -1,4 +1,4 @@
-package Theme03;
+package Theme03_TicTacToe;
 
 /**
  * @description Simple game win checking

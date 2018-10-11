@@ -1,4 +1,4 @@
-package Theme03;
+package Theme03_TicTacToe;
 
 /**
  * @description Get turns coord for human and computer

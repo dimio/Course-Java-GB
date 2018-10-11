@@ -1,4 +1,4 @@
-package Theme03;
+package Theme03_TicTacToe;
 
 /**
  * @description Make, update and print a game field

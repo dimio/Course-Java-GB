@@ -1,4 +1,4 @@
-package Theme03;
+package Theme03_TicTacToe;
 
 /**
  * @description Simple TicTacToe training game on Java in procedural style
@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class TacTacToe {
     /** НАСТРОЙКИ
      * @difficulty - сложность игры, возможные значения:
-     * 1 - легко (случайные ходы компьютера);
+     * 1 - легко (случайные ходы -компьютера);
      * 2 - средне (предпочитаемый ход компьютера - рядом с ходом игрока);
      * 3 - тяжело (компьютер пытается выстроить победную серию или помешать игроку).
      */

@@ -1,4 +1,4 @@
-package Theme03;
+package Theme03_TicTacToe;
 
 /**
  * @description Simple tic-tac-toe engine
@@ -58,6 +58,7 @@ public class Engine {
 
     //TODO: переделать isWin в пакете Game, модифицировать метод выбора хода (с учетом длин диагоналей)
     //TODO: добавить выбор случайного хода из лучших (иначе ходы компьютера предсказуемы)
+    //TODO: для ходов равного веса добавить рандомизацию обновления turnWinC
     public static void makeStupidTurn(int[] turnXY, int winingStreakSize, char[] CELLS, char[][] map){
         boolean hasWonC = false; //выигрышный ход для компьютера
         int[] turnWinC = new int[3]; //вес, координаты
