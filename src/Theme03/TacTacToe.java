@@ -1,4 +1,4 @@
-package Theme03_TicTacToe;
+package Theme03;
 
 /**
  * @description Simple TicTacToe training game on Java in procedural style
