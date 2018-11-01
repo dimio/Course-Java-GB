@@ -1,5 +1,19 @@
-# Compiled class file
+# Check public sources only
+src/
+!src/Theme03/
+!src/TicTacToe/
+
+# IDE settings
+.idea/
+course01_interactive.iml
+
+# Compiled class file and compilation dir
 *.class
+out/
+
+# GIT files
+FETCH_HEAD
+git
 
 # Log file
 *.log
