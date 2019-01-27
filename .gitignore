@@ -1,18 +1,7 @@
-# Check public sources only
-src/
-!src/Theme03/
-!src/TicTacToe/
-
-# IDE settings
-.idea/
-course01_interactive.iml
-
-# Compiled class file and compilation dir
-out/
-
-# GIT files
-FETCH_HEAD
-git
+# Created by .ignore support plugin (hsz.mobi)
+### Java template
+# Compiled class file
+*.class
 
 # Log file
 *.log
@@ -32,6 +21,12 @@ git
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-CodeStyleCheckTool.xml
+/.idea/
+/out/
+
+/src/
+!/src/Theme03/
+!/src/TicTacToe/
+/CodeStyleCheckTool.xml
+/course01_interactive.iml
+/.gitignore
