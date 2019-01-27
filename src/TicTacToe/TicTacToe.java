@@ -12,6 +12,7 @@ import TicTacToe.game.Game;
 TODO:
 [ ] help menu
 [ ] about menu
+[ ] win streak backlight
 [ ] game statistic display:
     [ ] current turn / max turns
     [ ] winning streak size

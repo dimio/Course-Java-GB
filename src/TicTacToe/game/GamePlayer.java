@@ -6,20 +6,20 @@ package TicTacToe.game;
  * @description Tic-Tac-Toe game Player builder
  */
 
-class GamePlayer {
-  private char playerSign;
+public class GamePlayer {
+  private byte playerSign;
   private boolean realPlayer;
 
-  GamePlayer(char playerSign, boolean realPlayer) {
+  GamePlayer(byte playerSign, boolean realPlayer) {
     this.realPlayer = realPlayer;
     this.playerSign = playerSign;
   }
 
-  boolean isRealPlayer() {
+  public boolean isRealPlayer() {
     return realPlayer;
   }
 
-  char getPlayerSign() {
+  public byte getPlayerSign() {
     return playerSign;
   }
 }

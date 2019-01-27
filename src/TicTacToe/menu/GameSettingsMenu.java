@@ -19,7 +19,7 @@ class GameSettingsMenu extends JDialog {
   private GameSettings settings;
 
   GameSettingsMenu(JFrame owner, GameSettings settings) {
-    super(owner, "Настройки", true);
+    super(owner, "Настройки TicTacToe", true);
 
     this.settings = settings;
 

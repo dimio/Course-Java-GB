@@ -39,9 +39,9 @@ public class Game {
     }
     else {
       settings = new GameSettings(
-          settings.getWiningStreakSize(),
           settings.getBoardWidth(),
           settings.getBoardHeight(),
+          settings.getWiningStreakSize(),
           settings.getTurnOrder()
       );
     }
@@ -66,7 +66,7 @@ public class Game {
     return gamePlayers[playersTurn];
   }
 
-  GamePlayer[] getGamePlayers() {
+  public GamePlayer[] getGamePlayers() {
     return gamePlayers;
   }
 
