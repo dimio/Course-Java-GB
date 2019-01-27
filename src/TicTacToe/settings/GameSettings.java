@@ -8,9 +8,9 @@ package TicTacToe.settings;
 
 public class GameSettings {
   public static final String GAME_TITLE = "TicTacToe";
-  public static final char NULL_SYMBOL = '\u0000';
-  public static final char PLAYER_ONE_SIGN = 'X';
-  public static final char PLAYER_TWO_SIGN = 'O';
+  public static final byte NULL_SYMBOL = '\u0000';
+  public static final byte PLAYER_ONE_SIGN = 'X';
+  public static final byte PLAYER_TWO_SIGN = 'O';
   public static final int MAX_BOARD_WIDTH = 20;
   public static final int MAX_BOARD_HEIGHT = 20;
 
@@ -21,11 +21,11 @@ public class GameSettings {
   private int gameMaxTurns;
   private int turnOrder; //0: player first, 1: comp first
 
-  public GameSettings(int W, int H, int S, int T) {
-    setBoardWidth(W); //field j-size (x) columns
-    setBoardHeight(H); //field i-size (y) rows
-    setWinningStreakSize(S);
-    setTurnOrder(T);
+  public GameSettings(int Width, int Height, int StreakSize, int Turn) {
+    setBoardWidth(Width); //field j-size (x) columns
+    setBoardHeight(Height); //field i-size (y) rows
+    setWinningStreakSize(StreakSize);
+    setTurnOrder(Turn);
 
     setGameMaxTurns();
 

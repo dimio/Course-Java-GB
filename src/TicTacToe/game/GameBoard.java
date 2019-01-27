@@ -6,6 +6,7 @@ package TicTacToe.game;
  * @author Dmitry (dimio-blog@gmail.com)
  */
 
+import TicTacToe.engine.GameEngine;
 import TicTacToe.menu.GameMenu;
 import TicTacToe.settings.GameSettings;
 
@@ -13,7 +14,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class GameBoard extends JFrame {
-  private char[][] gameField;
+  private byte[][] gameField;
   private int turnX, turnY;
   private GameButton[] gameButtons;
   private Game game;
@@ -22,12 +23,12 @@ public class GameBoard extends JFrame {
   private JFrame field;
 
   GameBoard(Game currentGame) {
-    this.game = currentGame;
-    this.settings = game.getSettings();
+    game = currentGame;
+    settings = game.getSettings();
 
     initField();
 
-    this.engine = new GameEngine(this);
+    engine = new GameEngine(this);
   }
 
   public Game getGame() {
@@ -57,25 +58,25 @@ public class GameBoard extends JFrame {
   int getTurnY() {
     return turnY;
   }
-
   // DEL
-  char[][] getGameField() {
+
+  public byte[][] getGameField() {
     return gameField;
   }
 
   void makeTurnXY() {
-    GameEngine.TurnCoord turnIJ;
+    GameEngine.TurnCoord turnCoord;
 
     if (settings.getTurnOrder() == 1 && game.getGeneralTurn() == 1){
-      turnIJ = engine.makeIsFirstTurn();
+      turnCoord = engine.makeIsFirstTurn();
     }
     //TODO: здесь выбирать метод получения координат хода в зависимости от настройки сложности
     else {
-      turnIJ = engine.makeStupidTurn();
+      turnCoord = engine.makeStupidTurn();
     }
 
-    turnX = turnIJ.getJ(); //j
-    turnY = turnIJ.getI(); //i
+    turnX = turnCoord.getJ(); //j
+    turnY = turnCoord.getI(); //i
   }
 
   void freezeField() {
@@ -96,18 +97,27 @@ public class GameBoard extends JFrame {
     return engine.inCellMaxStreakSize(i, j) >= settings.getWiningStreakSize();
   }
 
-  boolean isTurnable(int i, int j) {
+  public boolean isTurnable(int i, int j) {
     return gameField[i][j] == GameSettings.NULL_SYMBOL;
   }
 
   private void initField() {
-    this.field = new JFrame();
+    field = new JFrame();
 
     field.setTitle(GameSettings.GAME_TITLE);
     field.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+    int cellSize = settings.getCellSize();
+    int borderWidth = settings.getBoardWidth();
+    int borderHeight = settings.getBoardHeight();
+    int centerX = (int)(Toolkit.getDefaultToolkit().getScreenSize().getWidth() / 2);
+    int centerY = (int)(Toolkit.getDefaultToolkit().getScreenSize().getHeight() / 2);
+    field.setLocation (centerX - (cellSize * borderWidth) / 2,
+        centerY - (cellSize * borderHeight) / 2);
     // TODO: сделать квадратные клетки, сетка д.б. в контейнере с прокруткой
-    field.setPreferredSize(new Dimension(settings.getCellSize() * settings.getBoardWidth(),
-        settings.getCellSize() * settings.getBoardHeight()));
+    field.setMinimumSize(new Dimension(cellSize * borderWidth,
+        cellSize * borderHeight));
+
 
     field.setJMenuBar(new GameMenu(this));
 
@@ -118,7 +128,7 @@ public class GameBoard extends JFrame {
     gameFieldPanel.setSize(settings.getCellSize() * settings.getBoardWidth(),
         settings.getCellSize() * settings.getBoardHeight());
 
-    gameField = new char[settings.getBoardHeight()][settings.getBoardWidth()];
+    gameField = new byte[settings.getBoardHeight()][settings.getBoardWidth()];
 
     gameButtons = new GameButton[settings.getBoardHeight() * settings.getBoardWidth()];
 
@@ -132,4 +142,5 @@ public class GameBoard extends JFrame {
     field.setVisible(true);
     field.pack();
   }
+
 }
