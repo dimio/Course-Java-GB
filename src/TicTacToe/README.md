@@ -1,5 +1,5 @@
 ## Usage
-Run the main() method on a [TicTacToe](https://github.com/dimio/Course-Java-GB/blob/master/src/TicTacToe/TicTacToe.java) Java class for playing (or build the game in binary).
+Run the main() method on a [TicTacToe](/src/TicTacToe/TicTacToe.java) Java class for playing (or build the game in binary).
 
 ## Settings*
 Use a "Игра" -> "Настройки" game menu for change next game settings:
@@ -10,7 +10,7 @@ Use a "Игра" -> "Настройки" game menu for change next game settings
 
 Start a new game ("Игра" -> "Новая игра") for apply the changed settings.
 
-_*You may want to change some settings in the file [GameSettings.java](https://github.com/dimio/Course-Java-GB/blob/master/src/TicTacToe/settings/GameSettings.java)_
+_*You may want to change some settings in the file [GameSettings.java](/src/TicTacToe/settings/GameSettings.java)_
 
 ## Other
 Just enjoy the game!
