@@ -1,4 +1,4 @@
-package TicTacToe.menu;
+package TicTacToeGui.menu;
 
 /**
  * @description Game settings menu builder
@@ -6,7 +6,7 @@ package TicTacToe.menu;
  * @author Dmitry (dimio-blog@gmail.com)
  */
 
-import TicTacToe.settings.GameSettings;
+import TicTacToeGui.settings.GameSettings;
 
 import javax.swing.*;
 import java.awt.*;

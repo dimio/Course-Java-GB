@@ -1,4 +1,4 @@
-package TicTacToe.game;
+package TicTacToeGui.game;
 
 /**
  * @description Tic-Tac-Toe field map and GUI board builder
@@ -6,9 +6,9 @@ package TicTacToe.game;
  * @author Dmitry (dimio-blog@gmail.com)
  */
 
-import TicTacToe.engine.GameEngine;
-import TicTacToe.menu.GameMenu;
-import TicTacToe.settings.GameSettings;
+import TicTacToeGui.engine.GameEngine;
+import TicTacToeGui.menu.GameMenu;
+import TicTacToeGui.settings.GameSettings;
 
 import javax.swing.*;
 import java.awt.*;

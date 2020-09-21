@@ -1,6 +1,6 @@
 
 ## Usage
-Run the main() method on a [TicTacToe](https://github.com/dimio/Course-Java-GB/blob/master/src/Theme03/TacTacToe.java) Java class for playing.
+Run the main() method on a [TicTacToeGui](https://github.com/dimio/Course-Java-GB/blob/master/src/Theme03/TacTacToe.java) Java class for playing.
 ## Settings
 You can use next difficulty levels:
 - 1 - computer make random turns

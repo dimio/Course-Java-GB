@@ -1,4 +1,4 @@
-package TicTacToe.game;
+package TicTacToeGui.game;
 
 /**
  * @description Simple Tic-Tac-Toe game class
@@ -6,7 +6,7 @@ package TicTacToe.game;
  * @author Dmitry (dimio-blog@gmail.com)
  */
 
-import TicTacToe.settings.GameSettings;
+import TicTacToeGui.settings.GameSettings;
 
 import javax.swing.*;
 

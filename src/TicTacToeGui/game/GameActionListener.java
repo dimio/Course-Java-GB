@@ -1,4 +1,4 @@
-package TicTacToe.game;
+package TicTacToeGui.game;
 
 /**
  * @description Handler for a Game field buttons clicks

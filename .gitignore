@@ -24,9 +24,5 @@
 /.idea/
 /out/
 
-/src/
-!/src/Theme03/
-!/src/TicTacToe/
 /CodeStyleCheckTool.xml
-/course01_interactive.iml
-/.gitignore
+*.iml

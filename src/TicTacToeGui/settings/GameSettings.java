@@ -1,4 +1,4 @@
-package TicTacToe.settings;
+package TicTacToeGui.settings;
 
 /**
  * @author Dmitry (dimio-blog@gmail.com)
@@ -7,7 +7,7 @@ package TicTacToe.settings;
  */
 
 public class GameSettings {
-  public static final String GAME_TITLE = "TicTacToe";
+  public static final String GAME_TITLE = "TicTacToeGui";
   public static final byte NULL_SYMBOL = '\u0000';
   public static final byte PLAYER_ONE_SIGN = 'X';
   public static final byte PLAYER_TWO_SIGN = 'O';

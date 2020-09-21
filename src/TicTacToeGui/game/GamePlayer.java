@@ -1,4 +1,4 @@
-package TicTacToe.game;
+package TicTacToeGui.game;
 
 /**
  * @author Dmitry (dimio-blog@gmail.com)

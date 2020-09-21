@@ -1,4 +1,4 @@
-package TicTacToe.engine;
+package TicTacToeGui.engine;
 
 /**
  * @description Calculator for computer turn coordinates
@@ -6,8 +6,8 @@ package TicTacToe.engine;
  * @author Dmitry (dimio-blog@gmail.com)
  */
 
-import TicTacToe.game.GameBoard;
-import TicTacToe.settings.GameSettings;
+import TicTacToeGui.game.GameBoard;
+import TicTacToeGui.settings.GameSettings;
 
 import java.util.Random;
 

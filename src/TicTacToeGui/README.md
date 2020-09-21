@@ -1,5 +1,5 @@
 ## Usage
-Run the main() method on a [TicTacToe](/src/TicTacToe/TicTacToe.java) Java class for playing (or build the game in binary).
+Run the main() method on a [TicTacToeGui](/src/TicTacToe/TicTacToe.java) Java class for playing (or build the game in binary).
 
 ## Settings*
 Use a "Игра" -> "Настройки" game menu for change next game settings:

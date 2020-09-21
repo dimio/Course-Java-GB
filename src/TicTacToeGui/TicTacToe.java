@@ -1,4 +1,4 @@
-package TicTacToe;
+package TicTacToeGui;
 
 /**
  * @description Simple Tic-Tac-Toe training game with GUI on Java in OO-style
@@ -6,9 +6,9 @@ package TicTacToe;
  * @author Dmitry (dimio-blog@gmail.com)
  */
 
-import TicTacToe.game.Game;
+import TicTacToeGui.game.Game;
 
-/*
+/**
 TODO:
 [ ] help menu
 [ ] about menu
@@ -16,7 +16,7 @@ TODO:
 [ ] game statistic display:
     [ ] current turn / max turns
     [ ] winning streak size
-  */
+*/
 
 public class TicTacToe {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package TicTacToe.game;
+package TicTacToeGui.game;
 
 /**
  * @description Tic-Tac-Toe GUI board action buttons

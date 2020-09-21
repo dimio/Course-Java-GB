@@ -1,4 +1,4 @@
-package TicTacToe.menu;
+package TicTacToeGui.menu;
 
 /**
  * @description Game main menu builder
@@ -6,7 +6,7 @@ package TicTacToe.menu;
  * @author Dmitry (dimio-blog@gmail.com)
  */
 
-import TicTacToe.game.GameBoard;
+import TicTacToeGui.game.GameBoard;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
